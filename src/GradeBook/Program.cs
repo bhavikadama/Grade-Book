@@ -52,6 +52,9 @@ namespace GradeBook
             Console.WriteLine($"Highest grade: {stats.High}");
             Console.WriteLine($"result: {stats.Average:N1}");
             Console.WriteLine($"The letter grade is {stats.Letter}");
+            Console.WriteLine("constant variable", Book.UPPERCASEVALUE);
+            // const values are to be treated as static members of class
+            // <class name>.<value>;
         }
     }
 }

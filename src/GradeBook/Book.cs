@@ -7,6 +7,7 @@ namespace GradeBook
     {
         public Book(string name)
         {
+           category ="";
             grades = new List<double>();
             Name = name;
         }
@@ -142,5 +143,9 @@ namespace GradeBook
             private set; // ensures the value is not changes after the constructor is called.
 
         }
+        readonly string category = "Science";   // value can be changed only in the constructor
+        public const int UPPERCASEVALUE=3;
+        //x++;      // const values cannot be changed anywhere
+
     }
 }
